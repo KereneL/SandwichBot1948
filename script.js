@@ -1,4 +1,4 @@
-var sandwich = document.getElementById("sandwich");
+var sandwich = document.getElementById("sandwich-div");
 
 
 var bread = Math.floor(Math.random() * (breadType.length));
