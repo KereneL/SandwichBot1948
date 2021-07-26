@@ -24,7 +24,7 @@ while (addMore == true) {
 
     var rnd = (Math.random() * (ingredients.length));
     console.log(rnd + "," + ingredients.length);
-    if (rnd > 0.99) {
+    if (rnd > 1) {
         addMore = false;
     }
 }
@@ -34,11 +34,11 @@ var bottomBread = document.createElement("li");
 bottomBread.appendChild(document.createTextNode(breadType[bread]));
 sandwich.appendChild(bottomBread);
 
-if (Math.random() < 0.1) {
+if (Math.random() < 0.15) {
     var i = Math.floor(Math.random() * (specialServe.length));
 
     var serve = document.createElement("li");
-    serve.appendChild(document.createTextNode(`${specialServe[i]}`));
+    serve.appendChild(document.createTextNode(`* [${specialServe[i]}]`));
     sandwich.appendChild(serve);
 }
 
